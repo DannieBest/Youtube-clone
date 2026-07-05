@@ -5,24 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MY YOUTUBE</title>
     <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="css/header.css" />
   </head>
   <body>
     <!-- header -->
     <header>
-      <div class="header_left">
+      <div class="header__left">
         <button class="sidebar-toggle">
           <i class="material-icons">menu</i>
         </button>
-        <a href="#home"
-          ><img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXpPG8M_4uzJypeiuiAZJdWitHXCWcpyGdFzWzKv1HpA&s=10"
-            alt="logo"
+        <a href="#home" class="Youtube-link"
+          ><img src="src/icons/image_47e079d0.png" alt="Youtube-clonelogo"
         /></a>
       </div>
-      <div class="header_center">
-        <form>
-          <input class="search-bar" type="search" placeholder="Search" />
-          <button type="submit" class="search-button">
+      <div class="header__center">
+        <form class="header__search-form">
+          <input
+            class="header__search-input"
+            type="search"
+            placeholder="Search"
+          />
+          <button type="submit" class="header__search-button">
             <i class="material-icons">search</i>
           </button>
         </form>
@@ -30,8 +33,8 @@
           <i class="material-icons">mic</i>
         </button>
       </div>
-      <div class="header_right">
-        <button>
+      <div class="header__right">
+        <button class="create-button">
           <i class="material-icons">add</i>
           <span>create</span>
         </button>

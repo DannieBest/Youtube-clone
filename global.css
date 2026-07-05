@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 * {
   margin: 0;
@@ -9,5 +9,5 @@
 }
 
 p {
-  font-family: "roboto", arial, sans-serif;
+  font-family: 'roboto', arial, sans-serif;
 }
