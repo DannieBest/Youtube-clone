@@ -21,3 +21,6 @@ aside {
   transition: var(--transition-speed);
 }
 
+.sidebar-link:hover {
+  background-color: var(--hover-color);
+}

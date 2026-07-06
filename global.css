@@ -18,10 +18,11 @@ body{
   --secondary-color: #e4e3e3;
   --border-color: #b8b3b3;
   --text-color: #000000;
-  --header-height:56px;
-  --sidebar-width:240px;
-  --border-radius:30px;
-  --transition-speed:0.2s;
+  --header-height: 56px;
+  --sidebar-width: 240px;
+  --border-radius: 30px;
+  --transition-speed: 0.2s;
+  --hover-color: #f1f1f1;
 }
 
 
