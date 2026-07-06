@@ -12,7 +12,7 @@
     <!-- header -->
     <header>
       <div class="header__left">
-        <button class="sidebar-toggle">
+        <button class="sidebar-toggle" aria-label="Toggle sidebar">
           <i class="material-icons">menu</i>
         </button>
         <a href="#home" class="youtube-link"
@@ -26,23 +26,23 @@
             type="search"
             placeholder="Search"
           />
-          <button type="submit" class="header__search-button">
+          <button type="submit" class="header__search-button" aria-label="Search">
             <i class="material-icons">search</i>
           </button>
         </form>
-        <button class="voice-search-button">
+        <button class="voice-search-button" aria-label="Voice search">
           <i class="material-icons">mic</i>
         </button>
       </div>
       <div class="header__right">
-        <button class="create-button">
+        <button class="create-button" aria-label="Create">
           <i class="material-icons">add</i>
           <span>create</span>
         </button>
-        <button class="notification-button">
+        <button class="notification-button" aria-label="Notifications">
           <i class="material-icons">notifications</i>
         </button>
-        <button class="profile-button">
+        <button class="profile-button" aria-label="Profile">
           <i class="material-icons">account_circle</i>
         </button>
       </div>
@@ -52,26 +52,35 @@
       <!-- sidebar -->
       <aside>
         <nav class="sidebar">
-          <div class="home-button">
+          <a href="#home" class="sidebar-link">
             <i class="material-icons">home</i>
             <span>Home</span>
-          </div>
-          <div class="shorts-button">
+          </a>
+          <a href="#" class="sidebar-link">
             <i class="material-icons">local_fire_department</i>
             <span>Shorts</span>
-          </div>
+          </a>
           <hr class="horizontal-rule">
-            <div class="subscription-button">
+            <a href="#" class="sidebar-link">
               Subscriptions
               <i class="material-icons">keyboard_arrow_right</i>
-            </div>
-            <div class="profile-1">profile 1</div>
-            <div class="profile-2">profile 2</div>
-            <div class="profile-3">profile 3</div>
-            <div class="profile-4">profile 4</div>
-            <div class="profile-5">profile 5</div>
-            <div class="profile-6">profile 6</div>
-            <div class="profile-7">profile 7</div>
+            </a>
+            <a href="#" class="sidebar-link">
+              <img src="" alt="MrBeast">
+              <span>MrBeast</span>
+            </a>
+            <a href="#" class="sidebar-link">
+              <img src="" alt="PewDiePie">
+              <span>PewDiePie</span>
+            </a>
+            <a href="#" class="sidebar-link">
+              <img src="" alt="Dude Perfect">
+              <span>Dude Perfect</span>
+            </a>
+            <a href="#" class="sidebar-link">
+              <img src="" alt="Dude">
+              <span>Dude</span>
+            </a>
             <div class="show-more-button">
               <i class="material-icons">keyboard_arrow_down</i>
               Show more
@@ -113,7 +122,7 @@
               Show more
             </div>
           <hr class="horizontal-rule">
-            
+
             <div class="show-more-button">
               <i class="material-icons">keyboard_arrow_down</i>
               Show more

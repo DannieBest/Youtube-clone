@@ -8,8 +8,9 @@
   box-sizing: border-box;
 }
 
-p {
-  font-family: 'roboto', arial, sans-serif;
+body{
+    font-family:"Roboto", Arial, sans-serif;
+    padding-bottom: 1506px; /* Space for the fixed header */
 }
 
 :root {
@@ -17,4 +18,11 @@ p {
   --secondary-color: #e4e3e3;
   --border-color: #b8b3b3;
   --text-color: #000000;
+  --header-height:56px;
+  --sidebar-width:240px;
+  --border-radius:30px;
+  --transition-speed:0.2s;
 }
+
+
+
