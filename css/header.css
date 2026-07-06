@@ -1,37 +1,35 @@
+/* ==========================================
+   HEADER LAYOUT
+========================================== */
+
 header {
   position: fixed;
   top: 0;
+  width: 100%;
+  height: var(--header-height);
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: var(--header-height);
-  width: 100%;
+  
+ 
   padding: 0 16px;
-  border-bottom: 2px solid var(--border-color);
+
   background-color: var(--primary-color);
+  border-bottom: 2px solid var(--border-color);
+  
+  z-index: 100;
 }
 
-.header-icons :hover {
-  background-color: var(--hover-color);
-}
-
-.youtube-link img {
-  height: 40px;
-  width: auto;
-  padding: 0 12px;
-  border-radius: 14px;
-}
-
-.sidebar-toggle {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
+/* ==========================================
+   HEADER SECTIONS
+========================================== */
 
 .header__left {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+
   margin-left: 8px;
 }
 
@@ -39,89 +37,166 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+
   flex: 1;
+  max-width: var(--search-max-width);
+
   margin-right: 60px;
   margin-left: 70px;
-  max-width: 600px;
 }
 
 .header__right {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  
   gap: 8px;
 }
+
+/* ==========================================
+   HEADER LOGO
+========================================== */
+
+.youtube-link img {
+  height: 40px;
+  width: auto;
+
+  padding: 0 12px;
+
+  border-radius: 14px;
+}
+
+/* ==========================================
+   HEADER SEARCH
+========================================== */
 
 .header__search-form {
   display: flex;
   align-items: center;
+
   width: 100%;
 }
 
 .header__search-input {
   flex: 1;
+
   padding: 9px;
+
   border: 1px solid var(--border-color);
   border-radius: 30px 0 0 30px;
+
   background-color: var(--primary-color);
 }
 
 .header__search-button {
   padding: 3px 12px;
+
   border: 1px solid var(--border-color);
   border-radius: 0 30px 30px 0;
-  background-color: #e6e6e6;
+  
+  background-color: var(--primary-color);
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.sidebar-toggle,
+.voice-search-button,
+.create-button,
+.notification-button,
+.profile-button {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  border: 1px solid var(--border-color);
+
+  background-color: var(--secondary-color);
+
+  transition: background-color 2s ease;
+}
+
+.sidebar-toggle {
+  background: none;
+  border: none;
+}
+
+.header__search-button {
+  cursor: pointer;
 }
 
 .voice-search-button {
-  display: flex;
-  align-items: center;
-  padding: 6px;
-  border: 1px solid var(--border-color);
-  border-radius: 50%;
-  background-color: #e4e3e3;
-  cursor: pointer;
   margin-left: 12px;
-}
 
-.material-icons {
-  height: 24px;
-  width: auto;
+  padding: 6px;
+  
+  border-radius: var(--circle-radius);
+  
 }
 
 .create-button {
-  display: flex;
-  align-items: center;
   padding: 6px 12px;
-  border: 1px solid var(--border-color);
-  border-radius: 30px;
-  background-color: #e4e3e3;
-  cursor: pointer;
+  
+  border-radius: var(--border-radius);
 }
 
 .notification-button {
-  display: flex;
-  align-items: center;
   padding: 6px;
-  border: 1px solid var(--border-color);
-  border-radius: 30px;
-  background-color: #e4e3e3;
-  cursor: pointer;
+  
+  border-radius: var(--border-radius);
 }
 
 .profile-button {
-  display: flex;
-  align-items: center;
   padding: 6px;
+
   margin-left: 18px;
-  border: 1px solid var(--border-color);
-  border-radius: 50%;
-  background-color: #e4e3e3;
-  cursor: pointer;
+  
+  border-radius: var(--circle-radius);
 }
+
+/* ==========================================
+   ICONS
+========================================== */
+
+.material-icons {
+  font-size: var(--icon-size);
+}
+
+/* ==========================================
+   TYPOGRAPHY
+========================================== */
 
 .create-button span {
   margin-left: 4px;
-  font-size: 14px;
+  font-size: var(--font-size-medium);
   font-weight: bold;
+}
+
+/* ==========================================
+   STATES
+========================================== */
+
+.create-button:hover,
+.notification-button:hover,
+.profile-button:hover,
+.voice-search-button:hover {
+  background-color: var(--hover-color);
+}
+
+.header__search-input:focus {
+  outline: none;
+
+  border-color: #1976d2;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+
 }

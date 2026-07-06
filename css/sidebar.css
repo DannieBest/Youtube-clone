@@ -1,7 +1,12 @@
+/* ===================================
+   SIDEBAR CONTAINER
+=================================== */
+
 aside {
   display: flex;
   position: fixed;
   flex-direction: column;
+  border-right: 1px solid var(--border-color);
   top: var(--header-height);
   left: 0;
   width: var(--sidebar-width);
@@ -10,17 +15,50 @@ aside {
   overflow-y: auto;
 }
 
+/* ===================================
+   SIDEBAR NAVIGATION
+=================================== */
+
+.sidebar {}
+
+/* ===================================
+   SIDEBAR SECTION
+=================================== */
+
+.sidebar-section {}
+
+/* ===================================
+   SIDEBAR LINKS
+=================================== */
+
 .sidebar-link {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding: 12px 16px;
-  text-decoration: none;
   color: var(--text-color);
   border-bottom: 1px solid var(--border-color);
   transition: var(--transition-speed);
 }
 
+.sidebar-link i {}
+
+.sidebar-link span {}
+
+/* ===================================
+   STATES
+=================================== */
+
 .sidebar-link:hover {
   background-color: var(--hover-color);
+}
+
+.sidebar-link.active {}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+
 }
