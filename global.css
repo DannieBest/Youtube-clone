@@ -11,3 +11,10 @@
 p {
   font-family: 'roboto', arial, sans-serif;
 }
+
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #e4e3e3;
+  --border-color: #b8b3b3;
+  --text-color: #000000;
+}
