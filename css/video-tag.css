@@ -1,0 +1,61 @@
+.video-tag-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.video-tag-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;           
+  width: 100%;
+  gap: 12px;
+  border: 1px solid black;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  white-space: nowrap;
+
+}
+
+.video-tag-button {
+  white-space: nowrap;
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid grey;
+  flex-shrink: 0;
+  background-color: var(--primary-color);  
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.video-tag-scroll {
+  position: absolute;
+  border-radius: 50%;
+  border: none;
+  background-color: #fdfcfc;  
+  padding: 2px;
+  top:50%;
+  transform:translateY(-50%);
+  z-index:10;
+}
+
+.video-tag-scroll.left {
+  left: 0;
+}
+
+.video-tag-scroll.right {
+  right: 0;
+}
+
+.video-tag-scroll:hover {
+  background-color: var(--hover-color);
+
+}
+
+.video-tag-container::-webkit-scrollbar {
+    display: none;
+  
+}
