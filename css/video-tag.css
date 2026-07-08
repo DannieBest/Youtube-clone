@@ -1,11 +1,11 @@
-.video-tag-wrapper {
+.video-tag {
   display: flex;
   align-items: center;
   position: relative;
   width: 100%;
 }
 
-.video-tag-container {
+.video-tag__container {
   display: flex;
   justify-content: flex-start;
   align-items: center;           
@@ -18,7 +18,7 @@
 
 }
 
-.video-tag-button {
+.video-tag__button {
   white-space: nowrap;
   padding: 6px 12px;
   border-radius: 10px;
@@ -31,7 +31,7 @@
   cursor: pointer;
 }
 
-.video-tag-scroll {
+.video-tag__scroll {
   position: absolute;
   border-radius: 50%;
   border: none;
@@ -42,20 +42,20 @@
   z-index:10;
 }
 
-.video-tag-scroll.left {
+.video-tag__scroll.left {
   left: 0;
 }
 
-.video-tag-scroll.right {
+.video-tag__scroll.right {
   right: 0;
 }
 
-.video-tag-scroll:hover {
+.video-tag__scroll:hover {
   background-color: var(--hover-color);
 
 }
 
-.video-tag-container::-webkit-scrollbar {
+.video-tag__container::-webkit-scrollbar {
     display: none;
   
 }

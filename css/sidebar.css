@@ -30,7 +30,7 @@ aside {
    SIDEBAR SECTION
 =================================== */
 
-.sidebar-section {
+.sidebar__section {
   display: flex;
   flex-direction: column;
 
@@ -47,7 +47,7 @@ aside {
    SIDEBAR LINKS
 =================================== */
 
-.sidebar-link {
+.sidebar__link {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -64,7 +64,7 @@ aside {
   color var(--transition-speed);
 }
 
-.sidebar-link i {
+.sidebar__link i {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,7 +72,7 @@ aside {
   flex-shrink: 0;
 }
 
-.sidebar-link span {
+.sidebar__link span {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -81,13 +81,13 @@ aside {
   font-weight: 400;
 }
 
-.sidebar-link img {
+.sidebar__link img {
   border-radius: 50%;
   height: 25px;
   width: auto;
 }
 
-.footer-link {
+.sidebar-footer__link {
   margin-left: 8px;
   padding: 1px;
   font-size: var(--font-size-medium);
@@ -97,11 +97,11 @@ aside {
    STATES
 =================================== */
 
-.sidebar-link:hover {
+.sidebar__link:hover {
   background-color: var(--hover-color);
 }
 
-.sidebar-link .active {
+.sidebar__link .active {
   background-color: var(--hover-color);
   font-weight: 500;
 }
@@ -110,13 +110,13 @@ aside {
    Divider
 =================================== */
 
-.sidebar-divider {
+.sidebar__divider {
   height: 1px;
   background: var(--border-color);
   margin: 6px 0;
 }
 
-.footer-divider {
+.sidebar-footer__divider {
   height: 1px;
   background: var(--primary-color);
   margin: 6px 0;
@@ -133,7 +133,7 @@ aside {
   padding: 0px 0px 0px 8px;
 }
 
-.footer-container {
+.sidebar-footer__container {
   display: flex;
   flex-wrap: wrap;
 }
