@@ -37,6 +37,7 @@
 
     --header-height: 56px;
     --sidebar-width: 240px;
+    --sidebar-collapsed-width: 72px;
 
 
     /* Border Radius */
@@ -86,6 +87,14 @@ body{
 
     padding-top:var(--header-height);
 
+}
+
+main {
+  flex: 1;
+
+  margin-left: var(--sidebar-width);
+
+  padding: 24px;
 }
 
 
@@ -176,13 +185,14 @@ input:focus{
    9. ANIMATIONS
 ========================================== */
 
-*{
-
-    transition:
-        background-color var(--transition-speed),
-        color var(--transition-speed),
-        border-color var(--transition-speed);
-
+.sidebar-link,
+.create-button,
+.notification-button,
+.profile-button,
+.voice-search-button {
+  transition:
+    background-color var(--transition-speed),
+    color var(--transition-speed);
 }
 
 
