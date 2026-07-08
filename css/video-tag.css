@@ -15,7 +15,7 @@
   scroll-behavior: smooth;
   overflow-x: auto;
   white-space: nowrap;
-
+  padding-bottom: 20px;
 }
 
 .video-tag__button {
@@ -37,7 +37,7 @@
   border: none;
   background-color: #fdfcfc;  
   padding: 2px;
-  top:50%;
+  top: 30%;
   transform:translateY(-50%);
   z-index:10;
 }

@@ -1,13 +1,17 @@
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
 }
 
 .video-card {
   display: block;
   width: 100%;
-  margin-top: 20px;
+  cursor: pointer;
+}
+
+.video-card:hover {
+  background-color: var(--hover-color);
 }
 
 .video-card__thumbnail {
@@ -34,11 +38,12 @@
 
 .video-card__avatar img {
   height: 40px;
-  width: auto;
+  width: 40px;
+  object-fit: cover;
   border-radius: 50%;
 }
 
-.video-card__meta {
+.video-card__details {
   display: flex;
   flex-direction: column;
   gap: 4px;
