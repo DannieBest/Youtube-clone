@@ -16,18 +16,20 @@
 
 .video-card__thumbnail {
   display: block;
+  position: relative;
   width: 100%;
 }
 
 .video-card__thumbnail img {
   width: 100%;
-  border-radius: 12px;
+  border-radius: 10px;
   display: block;
 }
 
 .video-card__info {
   display: flex;
   align-items: flex-start;
+  justify-content: space-evenly;
   gap: 12px;
   margin-top: 12px;
 }
@@ -50,6 +52,7 @@
   
 }
 
+
 .video-card__title {
   font-size: var(--font-size-large);
   font-weight: 600;
@@ -65,3 +68,15 @@
   font-size: var(--font-size-medium);
 }
 
+.video-card__time {
+  position: absolute;
+  background-color: rgb(0, 0, 0, 0.7);
+  color: rgb(255, 255, 255);
+  right: 6px;
+  bottom: 8px;
+  padding: 3px 4px;
+  border-radius: 4px;
+  font-family: 'roboto', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}

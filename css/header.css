@@ -96,7 +96,7 @@ header {
 }
 
 .header__search-button {
-  padding: 6px 12px;
+  padding: 4px 12px;
 
   border: 1px solid var(--border-color);
   border-radius: 0 30px 30px 0;
@@ -110,9 +110,9 @@ header {
 ========================================== */
 
 .sidebar__toggle,
-.voice-search-button,
+.voice-search__button,
 .create-button,
-.notification-button,
+.notification__button,
 .profile-button {
 
   display: flex;
@@ -133,37 +133,38 @@ header {
   border: none;
 }
 
-.header__search-button {
-  cursor: pointer;
-}
 
-.voice-search-button {
+.voice-search__button {
   margin-left: 12px;
 
-  padding: 6px;
+  padding: 4px;
   
   border-radius: var(--circle-radius);
   
 }
 
 .create-button {
-  padding: 6px 12px;
+  padding: 4px 12px;
   
   border-radius: var(--border-radius);
 }
 
-.notification-button {
+.notification__button {
   padding: 6px;
   background-color: rgb(251, 248, 248);
   border-radius: var(--border-radius);
   border: none;
 }
 
-.notification-container {
+.header__search-container,
+.voice-search__container,
+.notification__container {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
-.notification-count {
+.notification__count {
   position: absolute;
   top: 0;
   right: 0;
@@ -175,12 +176,18 @@ header {
   border-radius: 10px;
 }
 
-.profile-button {
-  padding: 6px;
 
+
+.profile-button {
   margin-left: 16px;
   
   border-radius: var(--circle-radius);
+}
+
+.profile-button img {
+  height: 30px;
+  width: auto;
+  border-radius: 50%;
 }
 
 /* ==========================================
@@ -189,6 +196,26 @@ header {
 
 .material-icons {
   font-size: var(--icon-size);
+}
+
+.tool-tip {
+  position: absolute;
+  background-color: rgba(50, 47, 47, 0.7);
+  color: white;
+  bottom: -50px;
+  padding: 6px;
+  border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s ease;
+  white-space: nowrap;
+}
+
+.header__search-container:hover .tool-tip,
+.voice-search__container:hover .tool-tip,
+.notification__container:hover .tool-tip {
+
+    opacity: 1;
 }
 
 /* ==========================================
@@ -206,9 +233,9 @@ header {
 ========================================== */
 
 .create-button:hover,
-.notification-button:hover,
+.notification__button:hover,
 .profile-button:hover,
-.voice-search-button:hover {
+.voice-search__button:hover {
   background-color: var(--hover-color);
 }
 
@@ -244,7 +271,11 @@ header {
     margin-left: -20px;
   }
 
+  .header__left {
+    margin-left: -5px;
+  }
+
   .profile-button {
-    margin-left: 5px;
+    margin-left: 4px;
   }
 }

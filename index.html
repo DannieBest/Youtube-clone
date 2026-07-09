@@ -18,7 +18,7 @@
           <i class="material-icons">menu</i>
         </button>
         <a href="#home" class="youtube-link"
-          ><img src="src/icons/youtube-image.png" alt="Youtube-clonelogo"
+          ><img loading="lazy" src="src/icons/youtube-image.png" alt="Youtube-clonelogo"
         /></a>
       </div>
       <div class="header__center">
@@ -29,27 +29,34 @@
             placeholder="Search"
             aria-label="search videos"
           />
-          <button type="submit" class="header__search-button" aria-label="Search">
-            <i class="material-icons">search</i>
-          </button>
+          <div class="header__search-container">
+            <button type="submit" class="header__search-button" aria-label="Search">
+              <i class="material-icons">search</i>
+            </button>
+            <div class="tool-tip">search</div>
+          </div>
         </form>
-        <button class="voice-search-button" aria-label="Voice search">
-          <i class="material-icons">mic</i>
-        </button>
+        <div class="voice-search__container">
+          <button class="voice-search__button" aria-label="Voice search">
+            <i class="material-icons">mic</i>
+          </button>
+          <div class="tool-tip">search with your voice</div>
+        </div>
       </div>
       <div class="header__right">
         <button class="create-button" aria-label="Create">
           <i class="material-icons">add</i>
           <span>create</span>
         </button>
-        <div class="notification-container">
-          <button class="notification-button" aria-label="Notifications">
+        <div class="notification__container">
+          <button class="notification__button" aria-label="Notifications">
           <i class="material-icons">notifications</i>
-          <div class="notification-count">9+</div>
-        </button>
+          <div class="notification__count">9+</div>
+          </button>
+          <div class="tool-tip">notifications</div>
         </div>
         <button class="profile-button" aria-label="Profile">
-          <i class="material-icons">account_circle</i>
+          <img loading="lazy" src="src/assets/channel-pics/profile.jpeg" alt="profile-img loading="lazy"" />
         </button>
       </div>
     </header>
@@ -75,26 +82,26 @@
               <i class="material-icons">keyboard_arrow_right</i>
             </a>
             <a href="#" class="sidebar__link active">
-              <img src="src/assets/channel-pics/channel-1.jpeg" alt="MrBeast">
+              <img loading="lazy" src="src/assets/channel-pics/channel-1.jpeg" alt="MrBeast">
               <span>MrBeast</span>
             </a>
             <a href="#" class="sidebar__link active">
-              <img src="src/assets/channel-pics/channel-2.jpeg" alt="PewDiePie">
+              <img loading="lazy" src="src/assets/channel-pics/channel-2.jpeg" alt="PewDiePie">
               <span>PewDiePie</span>
             </a>
             <a href="#" class="sidebar__link active">
-              <img src="src/assets/channel-pics/channel-3.jpeg" alt="Dude Perfect">
+              <img loading="lazy" src="src/assets/channel-pics/channel-3.jpeg" alt="Dude Perfect">
               <span>Dude Perfect</span>
             </a>
             <a href="#" class="sidebar__link active">
-              <img src="src/assets/channel-pics/channel-4.jpeg" alt="Dude">
+              <img loading="lazy" src="src/assets/channel-pics/channel-4.jpeg" alt="Dude">
               <span>Dude</span>
             </a>
             <a href="#" class="sidebar__link active">
-              <img src="src/assets/channel-pics/channel-5.jpeg" alt="Aproko"><span>Aproko</span>
+              <img loading="lazy" src="src/assets/channel-pics/channel-5.jpeg" alt="Aproko"><span>Aproko</span>
             </a>
             <a href="#" class="sidebar__link active">
-              <img src="src/assets/channel-pics/channel-6.jpeg" alt="JeaFX"><span>JeaFX</span>
+              <img loading="lazy" src="src/assets/channel-pics/channel-6.jpeg" alt="JeaFX"><span>JeaFX</span>
             </a>
             <a href="#" class="sidebar__link active">
               <i class="material-icons">keyboard_arrow_down</i>
@@ -214,7 +221,7 @@
       </aside>
       <!-- main content -->
       <main>
-        <content>
+        <section class="content">
           <section class="video-tag">
             <button class="video-tag__scroll left">
               <i class="material-icons">keyboard_arrow_left</i>
@@ -265,13 +272,16 @@
             <article class="video-card">
               <div class="video-card__thumbnail">
                 <a href="#">
-                  <img src="src/assets/video-pics/thumbnail-1.webp" alt="video-pic" />
+                  <img loading="lazy" src="src/assets/video-pics/thumbnail-1.webp" alt="video-pic" />
                 </a>
+                <div class="video-card__time">
+                  14:20
+                </div>
               </div>
               <div class="video-card__info">
                 <div class="video-card__avatar">
                   <a href="#">
-                    <img src="src/assets/channel-pics/channel-1.jpeg" alt="channel-pic" />
+                    <img loading="lazy" src="src/assets/channel-pics/channel-1.jpeg" alt="channel-pic" />
                   </a>
                 </div>
                 <div class="video-card__details">
@@ -288,13 +298,16 @@
             <article class="video-card">
               <div class="video-card__thumbnail">
                 <a href="#">
-                  <img src="src/assets/video-pics/thumbnail-2.webp" alt="video-pic" />
+                  <img loading="lazy" src="src/assets/video-pics/thumbnail-2.webp" alt="video-pic" />
                 </a>
+                <div class="video-card__time">
+                  08:22
+                </div>
               </div>
               <div class="video-card__info">
                 <div class="video-card__avatar">
                   <a href="#">
-                    <img src="src/assets/channel-pics/channel-2.jpeg" alt="channel-pic" />
+                    <img loading="lazy" src="src/assets/channel-pics/channel-2.jpeg" alt="channel-pic" />
                   </a>
                 </div>
                 <div class="video-card__details">
@@ -310,13 +323,16 @@
             <article class="video-card">
               <div class="video-card__thumbnail">
                 <a href="#">
-                  <img src="src/assets/video-pics/thumbnail-3.webp" alt="video-pic" />
+                  <img loading="lazy" src="src/assets/video-pics/thumbnail-3.webp" alt="video-pic" />
                 </a>
+                <div class="video-card__time">
+                  09:13
+                </div>
               </div>
               <div class="video-card__info">
                 <div class="video-card__avatar">
                   <a href="#">
-                    <img src="src/assets/channel-pics/channel-3.jpeg" alt="channel-pic" />
+                    <img loading="lazy" src="src/assets/channel-pics/channel-3.jpeg" alt="channel-pic" />
                   </a>
                 </div>
                 <div class="video-card__details">
@@ -332,13 +348,16 @@
             <article class="video-card">
               <div class="video-card__thumbnail">
                 <a href="#">
-                  <img src="src/assets/video-pics/thumbnail-4.webp" alt="video-pic" />
+                  <img loading="lazy" src="src/assets/video-pics/thumbnail-4.webp" alt="video-pic" />
                 </a>
+                <div class="video-card__time">
+                  22:09
+                </div>
               </div>
               <div class="video-card__info">
                 <div class="video-card__avatar">
                   <a href="#">
-                    <img src="src/assets/channel-pics/channel-4.jpeg" alt="channel-pic" />
+                    <img loading="lazy" src="src/assets/channel-pics/channel-4.jpeg" alt="channel-pic" />
                   </a>
                 </div>
                 <div class="video-card__details">
@@ -354,17 +373,20 @@
             <article class="video-card">
               <div class="video-card__thumbnail">
                 <a href="#">
-                  <img src="src/assets/video-pics/thumbnail-5.webp" alt="video-pic" />
+                  <img loading="lazy" src="src/assets/video-pics/thumbnail-5.webp" alt="video-pic" />
                 </a>
+                <div class="video-card__time">
+                  11:17
+                </div>
               </div>
               <div class="video-card__info">
                 <div class="video-card__avatar">
                   <a href="#">
-                    <img src="src/assets/channel-pics/channel-5.jpeg" alt="channel-pic" />
+                    <img loading="lazy" src="src/assets/channel-pics/channel-5.jpeg" alt="channel-pic" />
                   </a>
                 </div>
                 <div class="video-card__details">
-                  <h3 class="video-card__title">Kadane"s Algorithm To Maximum Sum Subarray Problem</h3>
+                  <h3 class="video-card__title">Kadane's Algorithm To Maximum Sum Subarray Problem</h3>
                   <a class="video-card__author" href="#">CS Dojo</a>
                   <p class="video-card__stats">519K views &#183; 5 years ago</p>
                 </div>
@@ -376,19 +398,22 @@
             <article class="video-card">
               <div class="video-card__thumbnail">
                 <a href="#">
-                  <img src="src/assets/video-pics/thumbnail-6.webp" alt="video-pic" />
+                  <img loading="lazy" src="src/assets/video-pics/thumbnail-6.webp" alt="video-pic" />
                 </a>
+                <div class="video-card__time">
+                    19:59
+                  </div>
               </div>
               <div class="video-card__info">
                 <div class="video-card__avatar">
                   <a href="#">
-                    <img src="src/assets/channel-pics/channel-6.jpeg" alt="channel-pic" />
+                    <img loading="lazy" src="src/assets/channel-pics/channel-6.jpeg" alt="channel-pic" />
                   </a>
                 </div>
                 <div class="video-card__details">
-                  <h3 class="video-card__title">Crazy Tik Toks Taken Moments Before DISASTER</h3>
-                  <a class="video-card__author" href="#">SSSniper Wolf</a>
-                  <p class="video-card__stats">12M views &#183; 1 year ago</p>
+                  <h3 class="video-card__title">Anything You can Fit In This Circle I'll Pay For</h3>
+                  <a class="video-card__author" href="#">MrBeast</a>
+                  <p class="video-card__stats">141M views &#183; 1 year ago</p>
                 </div>
                 <div class="video-card__menu">
                   <i class="material-icons">more_vert</i>
@@ -396,7 +421,7 @@
               </div>
             </article>
           </section>
-        </content>
+        </section>
       </main>
     </div>
   </body>
