@@ -119,11 +119,6 @@ aside::-webkit-scrollbar-thumb {
   background-color: var(--hover-color);
 }
 
-.sidebar__link .active {
-  background-color: var(--hover-color);
-  font-weight: 500;
-}
-
 /* ===================================
    Divider
 =================================== */

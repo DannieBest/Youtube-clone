@@ -131,6 +131,8 @@ header {
 .sidebar__toggle {
   background: none;
   border: none;
+  padding: 6px;
+  border-radius: 50%;
 }
 
 
@@ -140,12 +142,12 @@ header {
   padding: 4px;
   
   border-radius: var(--circle-radius);
-  
+  background-color: rgb(251, 248, 248);
 }
 
 .create-button {
   padding: 4px 12px;
-  
+  background-color: rgb(251, 248, 248);
   border-radius: var(--border-radius);
 }
 
@@ -211,13 +213,6 @@ header {
   white-space: nowrap;
 }
 
-.header__search-container:hover .tool-tip,
-.voice-search__container:hover .tool-tip,
-.notification__container:hover .tool-tip {
-
-    opacity: 1;
-}
-
 /* ==========================================
    TYPOGRAPHY
 ========================================== */
@@ -232,11 +227,20 @@ header {
    STATES
 ========================================== */
 
+.sidebar__toggle:hover,
 .create-button:hover,
 .notification__button:hover,
 .profile-button:hover,
 .voice-search__button:hover {
-  background-color: var(--hover-color);
+  background-color: rgb(212, 203, 203);
+  transition: 0.1s ease;
+}
+
+.header__search-container:hover .tool-tip,
+.voice-search__container:hover .tool-tip,
+.notification__container:hover .tool-tip {
+
+    opacity: 1;
 }
 
 .header__search-input:focus {
