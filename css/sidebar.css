@@ -21,12 +21,12 @@ aside::-webkit-scrollbar {
 }
 
 aside:hover::-webkit-scrollbar {
-  display: block;
+  display: revert;
   width: 8px;
 }
 
 aside::-webkit-scrollbar-track {
-   background: #f8f6f6; 
+   background: #ffffff; 
 }
 
 aside::-webkit-scrollbar-thumb {
