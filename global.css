@@ -90,11 +90,13 @@ body{
 }
 
 main {
-  flex: 1;
+    display: flex;
 
-  margin-left: var(--sidebar-width);
+    flex: 1;
 
-  padding: 24px;
+    margin-left: var(--sidebar-width);
+
+    padding: 24px;
 }
 
 

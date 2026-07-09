@@ -11,6 +11,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex: 1;
   
  
   padding: 0 16px;
@@ -39,10 +40,13 @@ header {
   justify-content: center;
 
   flex: 1;
-  max-width: var(--search-max-width);
+  
+  max-width: 600px;
+  min-width: 40px;
 
-  margin-right: 60px;
-  margin-left: 70px;
+
+  margin-right: 65px;
+  margin-left: 80px;
 }
 
 .header__right {
@@ -75,10 +79,13 @@ header {
   align-items: center;
 
   width: 100%;
+
 }
 
 .header__search-input {
   flex: 1;
+
+  min-width: 0;
 
   padding: 10px 16px;
 
@@ -93,6 +100,7 @@ header {
 
   border: 1px solid var(--border-color);
   border-radius: 0 30px 30px 0;
+  border-left: none;
   
   background-color: var(--primary-color);
 }
@@ -146,14 +154,31 @@ header {
 
 .notification-button {
   padding: 6px;
-  
+  background-color: rgb(251, 248, 248);
   border-radius: var(--border-radius);
+  border: none;
+}
+
+.notification-container {
+  position: relative;
+}
+
+.notification-count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0px 3px;
+  font-family: 'roboto', arial;
+  font-weight: 600;
+  background-color: red;
+  color: var(--primary-color);
+  border-radius: 10px;
 }
 
 .profile-button {
   padding: 6px;
 
-  margin-left: 18px;
+  margin-left: 16px;
   
   border-radius: var(--circle-radius);
 }
@@ -197,6 +222,29 @@ header {
    RESPONSIVE
 ========================================== */
 
-@media (max-width: 768px) {
+@media (max-width: 650px) {
+  .header__center {
+    margin-left: 16px;
+    margin-left: 16px;
+    flex: 0;
+    transition: 0.1s ease-in;
+  }
 
+  .header__search-input {
+    display: none;
+  }
+
+  .header__search-button {
+    border-radius: 60px;
+    border: none;
+  }
+
+  .header__right {
+    gap: 3px;
+    margin-left: -20px;
+  }
+
+  .profile-button {
+    margin-left: 5px;
+  }
 }
