@@ -1,6 +1,6 @@
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 20px;
   margin-top: 50px;
   
@@ -78,7 +78,7 @@
   bottom: 8px;
   padding: 3px 4px;
   border-radius: 4px;
-  font-family: 'roboto', Arial, sans-serif;
+  font-family: inherit;
   font-size: 14px;
   font-weight: 400;
 }

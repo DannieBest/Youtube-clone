@@ -154,18 +154,6 @@ aside::-webkit-scrollbar-thumb {
 /* ==========================================
    RESPONSIVE
 ========================================== */
-@media (max-width: 768px) {
-  aside {
-    display: none;
-  }
-
-  main {
-    margin-left: 0;
-  }
-
-}
-
-
 
 @media (max-width:1200px){
 
@@ -176,6 +164,11 @@ aside::-webkit-scrollbar-thumb {
 
     main{
         margin-left:72px;
+    }
+
+    .video-tag{
+      left: 72px;
+      width: calc(100% - 72px);
     }
 
     .sidebar__link{
@@ -205,5 +198,16 @@ aside::-webkit-scrollbar-thumb {
     .sidebar__bottom-section {
       display: none;
     }
+
+}
+
+@media (max-width: 768px) {
+  aside {
+    display: none;
+  }
+
+  main {
+    margin-left: 0;
+  }
 
 }

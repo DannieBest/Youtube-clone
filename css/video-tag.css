@@ -1,14 +1,16 @@
 .video-tag {
-  display: flex;
+  display: block;
   align-items: center;
   position: fixed;
   width: 100%;
   background-color: rgb(255, 255, 255);
   top: var(--header-height);
+  left: auto;
   z-index: 99;
 }
 
 .video-tag__wrapper{
+  position: relative;
   flex:1;
   overflow:hidden;
 }
@@ -23,9 +25,9 @@
   border: none;
   overflow-x:auto;
   scroll-behavior: smooth;
-  scrollbar-width:none;
   white-space: nowrap;
   padding: 12px 0px;
+  
 }
 
 .video-tag__button {
@@ -41,20 +43,36 @@
 }
 
 .video-tag__arrow{
+  position: absolute;
   width:36px;
   height:36px;
+  top: 50%;
+  transform: translateY(-50%);
   border-radius:50%;
   display:flex;
   justify-content:center;
   align-items:center;
   border: none;
+  z-index: 5;
+}
 
+.video-tag__arrow--right {
+  right: 0;
+}
+
+.video-tag__arrow--left {
+  left: 0;
 }
 
 .video-tag__arrow:hover {
   background-color: rgb(212, 203, 203);
   transition: 0.1s ease;
-  background:linear-gradient(90deg, 0, 0, 0)
+  background:
+  linear-gradient(
+  90deg,
+  rgba(255,255,255,0),
+  rgb(191, 183, 183)
+  );
 }
 
 .video-tag__button.active{
