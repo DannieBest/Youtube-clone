@@ -17,7 +17,6 @@ header {
   padding: 0 16px;
 
   background-color: var(--primary-color);
-  border-bottom: 2px solid var(--border-color);
   
   z-index: 100;
 }
@@ -61,12 +60,12 @@ header {
    HEADER LOGO
 ========================================== */
 
-.youtube-link img {
+.logo img {
   height: 40px;
   width: auto;
 
   padding: 0 12px;
-
+ background-color: transparent;
   border-radius: 14px;
 }
 
@@ -164,6 +163,7 @@ header {
   position: relative;
   display: flex;
   justify-content: center;
+    
 }
 
 .notification__count {
@@ -211,6 +211,7 @@ header {
   pointer-events: none;
   transition: 0.2s ease;
   white-space: nowrap;
+
 }
 
 /* ==========================================

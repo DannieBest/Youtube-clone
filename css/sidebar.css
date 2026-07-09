@@ -21,7 +21,7 @@ aside::-webkit-scrollbar {
 }
 
 aside:hover::-webkit-scrollbar {
-  display: revert;
+  display: block;
   width: 8px;
 }
 
@@ -154,6 +154,56 @@ aside::-webkit-scrollbar-thumb {
 /* ==========================================
    RESPONSIVE
 ========================================== */
-
 @media (max-width: 768px) {
+  aside {
+    display: none;
+  }
+
+  main {
+    margin-left: 0;
+  }
+
+}
+
+
+
+@media (max-width:1200px){
+
+    aside{
+        width:72px;
+        height: 100vh;
+    }
+
+    main{
+        margin-left:72px;
+    }
+
+    .sidebar__link{
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        gap:4px;
+        margin:0;
+        padding:14px 0;
+        border-radius:10px;
+    }
+
+    .sidebar__link span{
+        display:block;
+        font-size:10px;
+    }
+
+    .sidebar-text,
+    .sidebar-footer,
+    .sidebar__divider{
+        display:none;
+    }
+
+    .sidebar__nav,
+    .sidebar__divider,
+    .sidebar__middle-section,
+    .sidebar__bottom-section {
+      display: none;
+    }
+
 }

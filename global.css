@@ -28,8 +28,8 @@
 
     --primary-color: #ffffff;
     --secondary-color: #e4e3e3;
-    --hover-color: #f1f1f1;
-    --border-color: #b8b3b3;
+    --hover-color: #efeaea;
+    --border-color: #dddcdc;
     --text-color: #000000;
 
 
@@ -90,7 +90,7 @@ body{
 }
 
 main {
-    display: flex;
+    display: grid;
 
     flex: 1;
 
@@ -202,8 +202,17 @@ input:focus{
    10. RESPONSIVE
 ========================================== */
 
-@media (max-width:768px){
 
+@media (max-width:768px){
+ main {
+    margin-left: 0px;
+ }
+}
+
+@media (max-width:400px){
+ main {
+    margin-left: 0px;
+ }
 }
 
 
