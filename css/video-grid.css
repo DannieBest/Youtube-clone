@@ -2,8 +2,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 20px;
-  margin-top: 50px;
-  
+  margin-top: 22px;
 }
 
 .video-card {
@@ -51,9 +50,7 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
-  
 }
-
 
 .video-card__title {
   font-size: var(--font-size-large);
@@ -63,7 +60,7 @@
 
 .video-card__author {
   font-size: var(--font-size-medium);
-  color:#606060;
+  color: #606060;
 }
 
 .video-card__stats {
@@ -89,8 +86,8 @@
   }
 }
 
-@media (max-width:768px){
- .video-grid {
+@media (max-width: 768px) {
+  .video-grid {
     margin-left: 0px;
- }
+  }
 }

@@ -94,7 +94,7 @@ main {
     display: grid;
     flex: 1;
     margin-left: var(--sidebar-width);
-    padding: 24px;
+    padding: 2px 24px;
     container-type: inline-size;
     transition: margin-left .25s ease, width .25s ease;
 }

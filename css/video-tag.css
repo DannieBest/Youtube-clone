@@ -1,11 +1,11 @@
 .video-tag {
   display: flex;
   align-items: center;
-  position: fixed;
+  position: sticky;
   width: 100%;
   background-color: rgb(255, 255, 255);
   top: var(--header-height);
-  left: auto;
+
   z-index: 99;
 }
 
@@ -64,7 +64,7 @@
 
 .video-tag__arrow--right {
   position: absolute;
-  right: 40px;
+  right: -2px;
 }
 
 .video-tag__arrow--left {
