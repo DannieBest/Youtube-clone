@@ -22,6 +22,7 @@ aside.collapsed {
   scrollbar-width: none;
 }
 
+
 aside.collapsed .sidebar-text,
 aside.collapsed .sidebar-footer,
 aside.collapsed .sidebar__nav,
@@ -189,6 +190,7 @@ aside::-webkit-scrollbar-thumb {
   aside {
     width: var(--sidebar-collapsed-width);
     height: 100vh;
+    scrollbar-width: none;
   }
 
   main {
