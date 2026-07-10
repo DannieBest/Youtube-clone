@@ -18,48 +18,32 @@ aside {
 }
 
 aside.collapsed {
-  aside {
-    width: 72px;
-    height: 100vh;
-    background: red;
-  }
+  width: var(--sidebar-collapsed-width);
+  scrollbar-width: none;
+}
 
-  main {
-    margin-left: 72px;
-  }
+aside.collapsed .sidebar-text,
+aside.collapsed .sidebar-footer,
+aside.collapsed .sidebar__nav,
+aside.collapsed .sidebar__divider,
+aside.collapsed .sidebar__middle-section,
+aside.collapsed .sidebar__bottom-section {
+  display: none;
+}
 
-  .video-tag {
-    left: 72px;
-    width: calc(100% - 72px);
-  }
+aside.collapsed .sidebar__link span {
+  display: block;
+  font-size: 10px;
+}
 
-  .sidebar__link {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    margin: 0;
-    padding: 14px 0;
-    border-radius: 10px;
-  }
-
-  .sidebar__link span {
-    display: block;
-    font-size: 10px;
-  }
-
-  .sidebar-text,
-  .sidebar-footer,
-  .sidebar__divider {
-    display: none;
-  }
-
-  .sidebar__nav,
-  .sidebar__divider,
-  .sidebar__middle-section,
-  .sidebar__bottom-section {
-    display: none;
-  }
+aside.collapsed .sidebar__link {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  margin: 0;
+  padding: 14px 0;
+  border-radius: 10px;
 }
 
 aside::-webkit-scrollbar {
@@ -102,7 +86,7 @@ aside::-webkit-scrollbar-thumb {
 }
 
 .sidebar-text {
-  font-size: 18px;
+  font-size: var(--font-size-big);
   font-weight: 600;
   margin: 8px 20px;
 }
@@ -141,7 +125,7 @@ aside::-webkit-scrollbar-thumb {
   align-items: center;
   gap: 10px;
   padding: 2px 4px;
-  font-size: 16px;
+  font-size: var(--font-size-large);
   font-weight: 400;
 }
 
@@ -203,7 +187,7 @@ aside::-webkit-scrollbar-thumb {
 
 @media (max-width: 1200px) {
   aside {
-    width: 72px;
+    width: var(--sidebar-collapsed-width);
     height: 100vh;
   }
 
@@ -213,7 +197,7 @@ aside::-webkit-scrollbar-thumb {
 
   .video-tag {
     left: 72px;
-    width: calc(100% - 72px);
+    width: calc(100% - var(--sidebar-collapsed-width));
   }
 
   .sidebar__link {
@@ -233,10 +217,6 @@ aside::-webkit-scrollbar-thumb {
 
   .sidebar-text,
   .sidebar-footer,
-  .sidebar__divider {
-    display: none;
-  }
-
   .sidebar__nav,
   .sidebar__divider,
   .sidebar__middle-section,

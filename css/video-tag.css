@@ -64,12 +64,12 @@
 
 .video-tag__arrow--right {
   position: absolute;
-  right: 0;
+  right: 40px;
 }
 
 .video-tag__arrow--left {
   position: absolute;
-  left: 0;
+  left: -2px;
 }
 
 .video-tag__arrow:hover {

@@ -53,6 +53,7 @@
     --font-size-small: 12px;
     --font-size-medium: 14px;
     --font-size-large: 16px;
+    --font-size-big: 18px;
 
 
     /* Icons */
@@ -91,18 +92,16 @@ body{
 
 main {
     display: grid;
-
     flex: 1;
-
     margin-left: var(--sidebar-width);
-
     padding: 24px;
     container-type: inline-size;
-
-    transition: margin-left .25s ease;
-    
+    transition: margin-left .25s ease, width .25s ease;
 }
 
+aside.collapsed + main {
+    margin-left: var(--sidebar-collapsed-width);
+}
 
 /* ==========================================
    5. TYPOGRAPHY
