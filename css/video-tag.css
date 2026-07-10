@@ -1,5 +1,5 @@
 .video-tag {
-  display: block;
+  display: flex;
   align-items: center;
   position: fixed;
   width: 100%;
