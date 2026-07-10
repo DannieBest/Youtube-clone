@@ -14,6 +14,52 @@ aside {
   background-color: var(--primary-color);
   overflow-y: auto;
   z-index: 99;
+  transition: width 0.25s ease;
+}
+
+aside.collapsed {
+  aside {
+    width: 72px;
+    height: 100vh;
+    background: red;
+  }
+
+  main {
+    margin-left: 72px;
+  }
+
+  .video-tag {
+    left: 72px;
+    width: calc(100% - 72px);
+  }
+
+  .sidebar__link {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    margin: 0;
+    padding: 14px 0;
+    border-radius: 10px;
+  }
+
+  .sidebar__link span {
+    display: block;
+    font-size: 10px;
+  }
+
+  .sidebar-text,
+  .sidebar-footer,
+  .sidebar__divider {
+    display: none;
+  }
+
+  .sidebar__nav,
+  .sidebar__divider,
+  .sidebar__middle-section,
+  .sidebar__bottom-section {
+    display: none;
+  }
 }
 
 aside::-webkit-scrollbar {
@@ -26,11 +72,11 @@ aside:hover::-webkit-scrollbar {
 }
 
 aside::-webkit-scrollbar-track {
-   background: #ffffff; 
+  background: #ffffff;
 }
 
 aside::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #888;
   border-radius: 4px;
 }
 
@@ -78,8 +124,8 @@ aside::-webkit-scrollbar-thumb {
   color: inherit;
 
   transition:
-  background-color var(--transition-speed),
-  color var(--transition-speed);
+    background-color var(--transition-speed),
+    color var(--transition-speed);
 }
 
 .sidebar__link i {
@@ -155,50 +201,48 @@ aside::-webkit-scrollbar-thumb {
    RESPONSIVE
 ========================================== */
 
-@media (max-width:1200px){
+@media (max-width: 1200px) {
+  aside {
+    width: 72px;
+    height: 100vh;
+  }
 
-    aside{
-        width:72px;
-        height: 100vh;
-    }
+  main {
+    margin-left: 72px;
+  }
 
-    main{
-        margin-left:72px;
-    }
+  .video-tag {
+    left: 72px;
+    width: calc(100% - 72px);
+  }
 
-    .video-tag{
-      left: 72px;
-      width: calc(100% - 72px);
-    }
+  .sidebar__link {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    margin: 0;
+    padding: 14px 0;
+    border-radius: 10px;
+  }
 
-    .sidebar__link{
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-        gap:4px;
-        margin:0;
-        padding:14px 0;
-        border-radius:10px;
-    }
+  .sidebar__link span {
+    display: block;
+    font-size: 10px;
+  }
 
-    .sidebar__link span{
-        display:block;
-        font-size:10px;
-    }
+  .sidebar-text,
+  .sidebar-footer,
+  .sidebar__divider {
+    display: none;
+  }
 
-    .sidebar-text,
-    .sidebar-footer,
-    .sidebar__divider{
-        display:none;
-    }
-
-    .sidebar__nav,
-    .sidebar__divider,
-    .sidebar__middle-section,
-    .sidebar__bottom-section {
-      display: none;
-    }
-
+  .sidebar__nav,
+  .sidebar__divider,
+  .sidebar__middle-section,
+  .sidebar__bottom-section {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -209,5 +253,4 @@ aside::-webkit-scrollbar-thumb {
   main {
     margin-left: 0;
   }
-
 }

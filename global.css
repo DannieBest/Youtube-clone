@@ -97,6 +97,10 @@ main {
     margin-left: var(--sidebar-width);
 
     padding: 24px;
+    container-type: inline-size;
+
+    transition: margin-left .25s ease;
+    
 }
 
 

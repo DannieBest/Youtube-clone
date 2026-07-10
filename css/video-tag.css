@@ -11,8 +11,10 @@
 
 .video-tag__wrapper{
   position: relative;
-  flex:1;
-  overflow:hidden;
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 
 .video-tag__container {
@@ -20,14 +22,14 @@
   justify-content: flex-start;
   align-items: center;   
   position: relative;        
-  width: 100%;
+  width: 100cqw;
   gap: 12px;
   border: none;
-  overflow-x:auto;
+  overflow-x: auto;
   scroll-behavior: smooth;
   white-space: nowrap;
   padding: 12px 0px;
-  
+  scrollbar-width: none;
 }
 
 .video-tag__button {
@@ -54,13 +56,19 @@
   align-items:center;
   border: none;
   z-index: 5;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
 }
 
 .video-tag__arrow--right {
+  position: absolute;
   right: 0;
 }
 
 .video-tag__arrow--left {
+  position: absolute;
   left: 0;
 }
 
@@ -78,9 +86,4 @@
 .video-tag__button.active{
   background:black;
   color:white;
-}
-
-.video-tag__container::-webkit-scrollbar {
-    display: none;
-  
 }
