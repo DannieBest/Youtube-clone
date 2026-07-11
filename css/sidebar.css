@@ -229,7 +229,12 @@ aside::-webkit-scrollbar-thumb {
 
 @media (max-width: 768px) {
   aside {
-    display: none;
+    overflow: hidden;
+    opacity: 0;
+  }
+
+  aside.collapsed {
+    opacity: 1;
   }
 
   main {
