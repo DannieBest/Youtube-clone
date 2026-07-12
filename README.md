@@ -63,16 +63,20 @@ During this project I practiced:
 
 ## 📁 Project Structure
 
-  youtube-clone/
+ ## 📁 Project Structure
+
+```text
+youtube-clone/
 │
 ├── css/
 ├── src/
-│ ├── assets/
-│ └── icons/
+│   ├── assets/
+│   └── icons/
 ├── .gitignore
 ├── index.html
 ├── global.css
 └── main.js
+```
 
 
 ---
